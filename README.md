@@ -153,7 +153,7 @@ class lists are at the top of `dist/plasma/keycap-focus`. A terminal embedded in
 
 ## Keymap
 
-Apps resolve their shortcuts through [chordkit](https://github.com/PoHsuanLai/chordkit) and never
+Apps resolve their shortcuts through [chordkit](https://github.com/Bardo-DE/chordkit) and never
 check Command or Control themselves. keycap is this desktop's source for it. Your own changes
 live in `~/.config/keycap/keymap` (or `$XDG_CONFIG_HOME/keycap/keymap`), one `action = shortcut`
 per line (`copy = Primary+Alt+C`, `redo = none`; `#` starts a comment); Settings writes it and

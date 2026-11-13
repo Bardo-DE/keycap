@@ -50,9 +50,9 @@ unknown-registry = "deny"
 unknown-git = "deny"
 allow-registry = ["https://github.com/rust-lang/crates.io-index"]
 allow-git = [
-    "https://github.com/PoHsuanLai/chordkit",
-    "https://github.com/PoHsuanLai/chordkit.git",
-    "https://github.com/PoHsuanLai/casement-protocols",
-    "https://github.com/PoHsuanLai/peephole",
-    "https://github.com/PoHsuanLai/turnstile",
+    "https://github.com/Bardo-DE/chordkit",
+    "https://github.com/Bardo-DE/chordkit.git",
+    "https://github.com/Bardo-DE/casement-protocols",
+    "https://github.com/Bardo-DE/peephole",
+    "https://github.com/Bardo-DE/turnstile",
 ]

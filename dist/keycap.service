@@ -15,7 +15,7 @@
 # `After=` and `Wants=` of a unit that is not installed are ignored by systemd.
 [Unit]
 Description=keycap: Mac keyboard mapping
-Documentation=https://github.com/PoHsuanLai/keycap
+Documentation=https://github.com/Bardo-DE/keycap
 Wants=turnstile.socket
 After=turnstile.socket
 Before=display-manager.service systemd-user-sessions.service

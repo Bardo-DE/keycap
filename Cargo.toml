@@ -7,7 +7,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.91"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/PoHsuanLai/keycap"
+repository = "https://github.com/Bardo-DE/keycap"
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
@@ -24,24 +24,24 @@ rustix = { version = "1", features = ["event", "fs", "net", "time", "process"] }
 input-linux = { version = "0.7", default-features = false }
 # The portable keymap core: actions, chords, overrides, the resolver. keycap is only this
 # desktop's source and remapper; it defines no keymap nouns of its own.
-chordkit = { git = "https://github.com/PoHsuanLai/chordkit.git", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
+chordkit = { git = "https://github.com/Bardo-DE/chordkit.git", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
 
 # The bounded reader for a settings file, at the same chordkit revision as `chordkit`;
 # Whopper moves it with the chordkit pin above.
-chordkit-file = { git = "https://github.com/PoHsuanLai/chordkit.git", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
+chordkit-file = { git = "https://github.com/Bardo-DE/chordkit.git", rev = "99eec9ddd03ee345b669fcc7954ed44590724290" }
 
 # The typed verbs casement sends sill, so keycap-client's handled-actions table names them; the
 # casement-protocols revision is moved by Whopper.
-shell-verbs = { git = "https://github.com/PoHsuanLai/casement-protocols", rev = "fa664f1fcb312abd7e7a0e38ccae216406e88139" }
+shell-verbs = { git = "https://github.com/Bardo-DE/casement-protocols", rev = "fa664f1fcb312abd7e7a0e38ccae216406e88139" }
 
 # Caller identity (who is on the other end of the socket) and the root service that makes the
 # virtual devices, by git tag, never by path.
-peephole = { git = "https://github.com/PoHsuanLai/peephole", tag = "v0.1.7" }
-peephole-core = { git = "https://github.com/PoHsuanLai/peephole", tag = "v0.1.7", features = ["desktop"] }
-turnstile-client = { git = "https://github.com/PoHsuanLai/turnstile", tag = "v0.1.6" }
+peephole = { git = "https://github.com/Bardo-DE/peephole", tag = "v0.1.7" }
+peephole-core = { git = "https://github.com/Bardo-DE/peephole", tag = "v0.1.7", features = ["desktop"] }
+turnstile-client = { git = "https://github.com/Bardo-DE/turnstile", tag = "v0.1.7" }
 
 # The socket guards (who is the shell, who has the seat), shared with palmrest, by git rev.
-latchkey = { git = "https://github.com/PoHsuanLai/latchkey", rev = "b10ae1b8c49c55cce2c5affde8f5db76edb66ab4", features = ["guard"] }
+latchkey = { git = "https://github.com/Bardo-DE/latchkey", rev = "b2ba95161ec9b375d066dec7495cb9ea4ebb673e", features = ["guard"] }
 
 # A panic must kill the process, so the kernel releases the keyboard grab and systemd restarts
 # it. Only release: tests need unwinding.
